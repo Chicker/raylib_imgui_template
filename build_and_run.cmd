@@ -6,7 +6,9 @@ call build.cmd
 
 IF %ERRORLEVEL% EQU 0 (
     echo Building executed successfully.
-    build\main.exe
+    pushd build
+    main.exe
+    popd
 ) ELSE (
     echo Building failed with error code: %ERRORLEVEL%.
 )
