@@ -1,10 +1,14 @@
-cmake_minimum_required(VERSION 3.27)
+# debug messages for git was introduced in 3.29 version
+cmake_minimum_required(VERSION 3.31.6)
 
 set(IMGUI_VERSION v1.92.4)
 set(RAYLIB_VERSION 5.5)
 set(RLIMGUI_VERSION 4d8a61842903978bc42adf3347cd34f4e6524efc)
 set(PROJECT_CMAKE_NAME RaylibImGuiTemplate)
 set(MAIN_PROJECT_NAME main)
+
+# Useful for tracking progress
+set(CMAKE_MESSAGE_LOG_LEVEL DEBUG)
 
 if(!MSVC)
     set(CMAKE_C_COMPILER clang)
