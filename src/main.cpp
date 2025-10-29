@@ -4,7 +4,7 @@
 #include <cstdio>
 
 #include "imgui.h"
-#include "rlimgui.h"
+#include "rlImGui.h"
 
 const int kScreenWidth = 1920;
 const int kScreenHeight = 1080;
